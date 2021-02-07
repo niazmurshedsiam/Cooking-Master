@@ -54,8 +54,8 @@ const showFoodDetails = id => {
         .then(data=>{
             let item = data.meals[0];
             let ingredients = "";
-            for(let i = 1; i <= 6; i++){
-                ingredients += `<li><i class="material-icons">check_box</i> ${item["strIngredient"+i]}</li>`;
+            for(let count = 1; count <= 6; count++){
+                ingredients += `<li><i class="material-icons">check_box</i> ${item["strIngredient"+count]}</li>`;
             }
             showDetailsArea.innerHTML = `<section id="modal">
               <div class="modal-content">

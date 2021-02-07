@@ -1,5 +1,4 @@
-
-  body {
+body {
     margin: 0;
     padding: 0;
     background-color: tan;
@@ -121,7 +120,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 5px 0px;
-    color: gray;
+    color: black;
   }
   .details i {
     color: #3b2d64;

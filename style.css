@@ -1,0 +1,177 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: tan;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+  .website-title {
+    margin-left: 50px;
+    color: tan;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f3f3f3;
+    text-align: center;
+    
+  }
+ 
+  .search-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-icon {
+    margin-right: -35px;
+    color: lightgray;
+    z-index: 1;
+  }
+  .search-field {
+    width: 250px;
+    height: 40px;
+    padding: 0px 40px;
+    color: #3b2d64;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .search-btn {
+    margin-left: -5px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: tomato;
+    color: white;
+  }
+  .search-btn:hover {
+    cursor: pointer;
+    background-color: #31214b;
+  }
+  .display-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: 50px 100px;
+  }
+  .food-item {
+    width: 200px;
+    margin: 20px 20px;
+    box-shadow: 1px 1px 10px 5px rgba(165, 165, 165, 0.5);
+    background-color: white;
+    border-radius: 5px;
+  }
+  .food-item:hover {
+    cursor: pointer;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+  }
+  .thumbnail img:hover {
+    transform: scale(1.2);
+  }
+  .food-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .details-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+  }
+  .food-details {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .food-details img {
+    margin-top: -40px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .details {
+    padding: 0px 25px;
+  }
+  .details h1 {
+    font-weight: bolder;
+  }
+  .details ul {
+    list-style: none;
+    padding: 0;
+  }
+  .details li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0px;
+    color: gray;
+  }
+  .details i {
+    color: #3b2d64;
+    padding-right: 5px;
+  }
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid gray;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  #modal {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+  }
+  #modal-btn {
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #3b2d64;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 50px auto;
+    width: 500px !important;
+    min-height: 500px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modal-body {
+    line-height: 2em;
+  }
